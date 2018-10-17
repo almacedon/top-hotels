@@ -1,0 +1,287 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #45A5C9;
+	background-color: #ffffff;
+}
+
+.container {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.logo {
+	position: absolute;
+	top: 20px;
+	left: -200px;
+}
+
+.logo img {
+	width: 145px;
+	height: 54px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.user-navigation ul {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.user-navigation li {
+	color: #808080;
+	font-size: 12px;
+	font-weight: 700;
+	margin-right: 15px;
+}
+
+.user-navigation li:last-child {
+	position: absolute;
+	top: 10px;
+	right: -210px;
+}
+
+.user-navigation a {
+	color: #ff0000;
+}
+
+.site-navigation ul {
+	display: flex;
+	width: 730px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #dcdcdc;
+	margin-bottom: 20px;
+}
+
+.site-navigation li {
+	margin-right: 20px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
+}
+
+.site-navigation a {
+	color: #45A5C9;
+	font-weight: 700;
+}
+
+.search {
+	min-height: 70px;
+	padding: 8px 0 8px 0;
+	background-color: #F4F2D7;
+}
+
+.search input {
+	width: 720px;
+	box-sizing: border-box;
+	border: 0;
+	padding-left: 15px;
+	margin-left: 80px;
+	min-height: 50px;
+}
+
+.search input::placeholder {
+	font-size: 14px;
+	color: #d3d3d3;
+}
+
+.search button {
+	position: absolute;
+}
+
+.parameters {
+	width: 80px;
+	min-height: 50px;
+	border: 0;
+	background-color: #fff8dc;
+}
+
+.key {
+	left: -200px;
+	width: 90px;
+	min-height: 50px;
+	border: 1px solid #ffffff;
+	background-color: #FB892D;
+}
+
+.language {
+	top: 10px;
+	right: -200px;
+	text-transform: uppercase;
+	width: 70px;
+	min-height: 50px;
+	border: 0;
+	background-color: #fff8dc;
+	color: #FB892D;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.language::after {
+	content: "";
+	position: absolute;
+	top: 18px;
+	right: 7px;
+	width: 6px;
+	height: 6px;
+	border-right: 2.5px solid #FB892D;
+	border-bottom: 2.5px solid #FB892D;
+	transform: rotate(45deg);
+}
+
+.container .current {
+	color: #636363;
+	padding-bottom: 11px;
+	border-bottom: 2px solid #636363;
+}
+
+.searching-form {
+	background-color: #fff8dc;
+	padding-top: 10px;
+}
+
+.searching-form .container {
+	padding: 10px 0 0 0;
+}
+
+.searching-form a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.searching-form ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 30px;
+}
+
+.searching-form li {
+	font-weight: 700;
+	margin-right: 20px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+	color: #6B6B6B;
+	margin-bottom: 20px;
+}
+
+.searching-form textarea {
+	width: 99%;
+	min-height: 105px;
+	padding: 10px 2px 10px 5px;
+	border: 0;
+}
+
+.searching-form textarea::placeholder {
+	color: #B3B3B2;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.searching-form textarea:focus {
+	min-height: 125px;
+	transition: min-height 0.3s;
+	outline: 0;
+}
+
+.searching-form p:last-of-type {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searching-form input {
+	width: 32.9%;
+	box-sizing: border-box;
+	min-height: 50px;
+	border: 0;
+	padding-left: 10px;
+}
+
+.searching-form input:focus {
+	outline: 0;
+}
+
+.searching-form input::placeholder {
+	color: #B3B3B2;
+	font-weight: 700;
+}
+
+.searching-form input:focus::placeholder {
+	transform: translateY(-15px);
+	font-size: 12px;
+	transition: transform 0.2s linear;
+}
+
+.searching-form .sending {
+	width: 33%;
+	height: 50px;
+	background-color: #FB892D;
+	color: #ffffff;
+	font-size: 16px;
+	border: 0;
+	margin-bottom: 20px;
+}
+
+.rules p {
+	font-size: 12px;
+	color: #000000;
+	margin: 0;
+}
+
+.rules a {
+	text-decoration: none;
+	color: #45A5C9;
+}
+
+.back a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.rega-page h2 {
+	font-size: 18px;
+	color: #636363;
+	margin-bottom: 40px;
+}
+
+.rega-page p {
+	color: #636363;
+}
+
+.sent a {
+	text-decoration: none;
+	color: #45A5C9;
+}
+
+.rega-page .container:last-child {
+	margin-top: -30px;
+}
+
+.searching-form .autorization {
+	margin-top: 20px;
+	margin-left: 10px;
+	background-color: #ffffff;
+	color: #FB892D;
+	border: 1px solid #FB892D;
+}

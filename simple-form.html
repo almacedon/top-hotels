@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Поиск отелей</title>
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="#" class="logo"><img src="img/TopHotels_PressKit7_14384122.svg" alt=""></a>
+				<nav>
+					<div class="user-navigation">
+						<ul>
+							<li>40% - мой профиль</li>
+							<li>139 706 чох</li>
+							<li><a href="#">1 сообщение</a></li>
+							<li><a href="#">Напомнить</a></li>
+							<li><a href="#">CRUSH</a></li>
+							<li><a href="#">Турист</a></li>
+							<li><a href="#">Отель</a></li>
+							<li><a href="#">Отзыв</a></li>
+							<li><a href="#">Выйти</a></li>
+						</ul>
+					</div>
+					<div class="site-navigation">
+						<ul>
+							<li><a href="#">Мой профиль</a></li>
+							<li><a href="#">Отели</a></li>
+							<li><a href="#">Клуб ТопХотелс</a></li>
+							<li><a href="#" class="current">Помощь в подборе</a></li>
+							<li><a href="#">Добавить отзыв</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="search">
+				<div class="container">
+					<form action="tophotels.ru" method="post">
+						<button type="button" class="key"></button>
+						<button type="button" class="parameters"></button>
+						<input type="text" name="search" placeholder="Введите отель, город или страну">
+						<button type="button" class="language">rus</button>
+					</form>
+				</div>
+			</section>
+			<section class="searching-form">
+				<div class="container">
+					<ul>
+						<li><a href="#">Параметры тура</a></li>
+						<li><a href="#">П1</a></li>
+						<li><a href="#">Ш2</a></li>
+						<li class="current"><a>Простая форма</a></li>
+						<li><a href="rega.html">Рега</a></li>
+					</ul>
+					<p class="uppercase">Подберем идеальные параметры для вашего незабываемого отдыха</p>
+					<form action="tophotels.ru" method="post">
+						<textarea name="parameters" rows="5" cols="50" placeholder=
+"- укажите страну, курорт или отель 
+- количество человек 
+- ваши предпочтения по отелю 
+- ваш бюджет 
+- другие  пожелания"></textarea>
+						<p>
+							<input type="text" name="name" placeholder="Ваше имя">
+							<input type="tel" name="phone" placeholder="Телефон">
+							<input type="text" name="email" placeholder="Email (необязательно)">
+						</p>
+						<button type="submit" class="sending">Отправить заявку*</button>
+					</form>
+				</div>
+			</section>
+			<section class="rules">
+				<div class="container">
+					<p>*Нажимая кнопку "отправить", я принимаю <a href="#">Соглашение об обработке личных данных</a> и <a href="#">Правила сайта</a></p>
+				</div>
+			</section>
+		</main>
+	</body>
