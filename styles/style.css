@@ -8,6 +8,17 @@ body {
 	background-color: #ffffff;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .container {
 	position: relative;
 	width: 800px;
@@ -180,37 +191,37 @@ nav a {
 .uppercase {
 	text-transform: uppercase;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #6B6B6B;
 	margin-bottom: 20px;
 }
 
-.searching-form textarea {
+.searching-form textarea[name="parameters"] {
 	width: 99%;
 	min-height: 105px;
 	padding: 10px 2px 10px 5px;
 	border: 0;
 }
 
-.searching-form textarea::placeholder {
+.searching-form textarea[name="parameters"]::placeholder {
 	color: #B3B3B2;
 	line-height: 20px;
 	font-weight: 700;
 }
 
-.searching-form textarea:focus {
-	min-height: 125px;
+.searching-form textarea[name="parameters"]:focus {
+	min-height: 145px;
 	transition: min-height 0.3s;
 	outline: 0;
 }
 
-.searching-form p:last-of-type {
+.three-inputs {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-.searching-form input {
+.three-inputs input {
 	width: 32.9%;
 	box-sizing: border-box;
 	min-height: 50px;
@@ -218,16 +229,16 @@ nav a {
 	padding-left: 10px;
 }
 
-.searching-form input:focus {
+.three-inputs input:focus {
 	outline: 0;
 }
 
-.searching-form input::placeholder {
+.three-inputs::placeholder {
 	color: #B3B3B2;
 	font-weight: 700;
 }
 
-.searching-form input:focus::placeholder {
+.three-inputs input:focus::placeholder {
 	transform: translateY(-15px);
 	font-size: 12px;
 	transition: transform 0.2s linear;
@@ -284,4 +295,321 @@ nav a {
 	background-color: #ffffff;
 	color: #FB892D;
 	border: 1px solid #FB892D;
+}
+
+.first-line {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-line input, 
+.second-line input {
+	min-height: 50px;
+	border: 0;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.first-line input::placeholder,
+.second-line input::placeholder {
+	font-weight: 700;
+	color: #B3B3B2;
+	line-height: 20px;
+}
+
+.first-line input:focus,
+.second-line input:focus {
+	outline: 0;
+}
+
+.first-line input[name="dates"] {
+	width: 35%
+}
+
+.first-line input[name="days"] {
+	position: relative;
+	width: 20%;
+}
+
+.first-line input[name="persons"] {
+	width: 20%;
+}
+
+.first-line input[name="price"] {
+	width: 15%;
+}
+
+.first-line select {
+	border: 0;
+	width: 9%;
+	padding-left: 10px;
+	font-size: 20px;
+	color: #636363;
+}
+
+.first-line option {
+	min-height: 50px;
+	font-size: 20px;
+	color: #636363;
+	border-bottom: 1px solid #636363;
+}
+
+.radiobuttons {
+	color: #636363;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.radiobuttons input {
+	visibility: hidden;
+}
+
+.radiobuttons label {
+	position: relative;
+}
+
+.radiobuttons label:first-of-type {
+	margin-right: 20px;
+}
+
+.radiobuttons label::before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border: 2px solid #636363;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 6px;
+}
+
+.radiobuttons .checkbox-indicator {
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: #636363;
+	border-radius: 50%;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	visibility: hidden;
+}
+
+.radiobuttons input:checked ~ .checkbox-indicator {
+	visibility: visible;
+}
+
+.second-line {
+	margin-top: 0;
+	display: flex;
+}
+
+.second-line input {
+	margin-right: 2px;
+}
+
+.second-line input[name="city-from"] {
+	width: 25%;
+}
+
+.second-line input[name="city-to"] {
+	width: 33%;
+}
+
+.second-line input[name="hotel-features"] {
+	width: 33%;
+}
+
+.second-line button {
+	margin-left: auto;
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border: 0;
+	color: #B3B3B2;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+}
+
+.searching-form textarea[name="suggestions"] {
+	width: 99%;
+	min-height: 60px;
+	border: 0;
+	padding: 10px 2px 10px 10px;
+}
+
+.searching-form textarea[name="suggestions"]::placeholder {
+	font-weight: 700;
+	color: #B3B3B2;
+	padding-top: 10px;
+}
+
+@keyframes bounce {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-300px);
+				transform: translateY(-300px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+				transform: translateY(0);
+	}
+}
+
+.dates-calendar {
+	display: none;
+	width: 280px;
+	position: absolute;
+	top: 115px;
+	left: 282px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 10px 2px #B3B3B2;
+	z-index: 2;
+	animation-name: bounce;
+	animation-duration: 0.2s;
+}
+
+.flex-container {
+	display: flex;
+	padding: 10px 20px;
+	border-bottom: 1px solid #A0522D;
+}
+
+.flex-container h3 {
+	margin: 0;
+}
+
+.dates-calendar button,
+.persons-quantity button {
+	position: relative;
+	padding: 0;
+	margin-left: auto;
+	border: 0;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+}
+
+.dates-calendar button::before,
+.persons-quantity button::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 6px;
+	width: 20px;
+	height: 20px;
+	border-bottom: 1px solid red;
+	transform: rotate(45deg);
+}
+
+.dates-calendar button::after,
+.persons-quantity button::after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -8px;
+	width: 20px;
+	height: 20px;
+	border-right: 1px solid red;
+	transform: rotate(45deg);
+}
+
+.dates-calendar table {
+	border-collapse: collapse;
+	border: 2px solid #dcdcdc;
+	width: 100%;
+	height: 100%;
+}
+
+.dates-calendar .table {
+	height: 190px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.table td {
+	border: 2px solid #dcdcdc;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	color: #636363;
+}
+
+.persons-quantity {
+	display: none;
+	width: 250px;
+	position: absolute;
+	top: 115px;
+	left: 445px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 10px 2px #B3B3B2;
+	z-index: 2;
+	animation-name: bounce;
+	animation-duration: 0.2s;
+}
+
+.persons-quantity ul {
+	margin: 0;
+	padding: 0;
+	padding: 13px 10px 10px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.persons-quantity li {
+	margin: 0;
+}
+
+.persons-quantity a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FB892D;
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #FB892D;
+	padding-top: 3px;
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+
+.persons-quantity a:focus {
+	background-color: #FB892D;
+	color: #ffffff;
+}
+
+.searching-form textarea[name="suggestions"]:focus {
+	min-height: 100px;
+	transition: min-height 0.3s;
+	outline: 0;
+}
+
+.searching-form textarea[name="suggestions"]:focus::placeholder {
+	transform: translateY(-15px);
+	font-size: 12px;
+	transition: transform 0.2s linear;
+}
+
+.visible {
+	display: block;
+}
+
+.first-line label,
+.second-line label {
+	color: #d3d3d3;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
+.second-line input[name="adding-hotel"] {
+	width: 79%;
 }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Поиск отелей</title>
+		<link href="styles/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="#" class="logo"><img src="img/TopHotels_PressKit7_14384122.svg" alt=""></a>
+				<nav>
+					<div class="user-navigation">
+						<ul>
+							<li>40% - мой профиль</li>
+							<li>139 706 чох</li>
+							<li><a href="#">1 сообщение</a></li>
+							<li><a href="#">Напомнить</a></li>
+							<li><a href="#">CRUSH</a></li>
+							<li><a href="#">Турист</a></li>
+							<li><a href="#">Отель</a></li>
+							<li><a href="#">Отзыв</a></li>
+							<li><a href="#">Выйти</a></li>
+						</ul>
+					</div>
+					<div class="site-navigation">
+						<ul>
+							<li><a href="#">Мой профиль</a></li>
+							<li><a href="#">Отели</a></li>
+							<li><a href="#">Клуб ТопХотелс</a></li>
+							<li><a href="#" class="current">Помощь в подборе</a></li>
+							<li><a href="#">Добавить отзыв</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="search">
+				<div class="container">
+					<form action="tophotels.ru" method="post">
+						<button type="button" class="key"></button>
+						<button type="button" class="parameters"></button>
+						<input type="text" name="search" placeholder="Введите отель, город или страну">
+						<button type="button" class="language">rus</button>
+					</form>
+				</div>
+			</section>
+			<section class="searching-form">
+				<div class="container">
+					<ul>
+						<li class="current"><a>Параметры тура</a></li>
+						<li><a href="p.html">П1</a></li>
+						<li><a href="sh.html">Ш2</a></li>
+						<li><a href="index.html">Простая форма</a></li>
+						<li><a href="rega.html">Рега</a></li>
+					</ul>
+					<p class="uppercase">Подберем идеальные параметры для вашего незабываемого отдыха</p>
+					<form action="tophotels.ru" method="post">
+						<div class="first-line">
+							<input type="text" name="dates" placeholder="Период дат вылета">
+							<input type="text" name="days" placeholder="Пребывание">
+							<div class="dates-calendar">
+								<div class="flex-container">
+									<h3 class="uppercase">количество ночей</h3>
+									<button type="button"><span class="visually-hidden">закрыть</span></button>
+								</div>
+								<div class="table">
+									<table>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>5</td>
+											<td>6</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>9</td>
+											<td>10</td>
+											<td>11</td>
+											<td>12</td>
+											<td>13</td>
+											<td>14</td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>16</td>
+											<td>17</td>
+											<td>18</td>
+											<td>19</td>
+											<td>20</td>
+											<td>21</td>
+										</tr>
+										<tr>
+											<td>22</td>
+											<td>23</td>
+											<td>24</td>
+											<td>25</td>
+											<td>26</td>
+											<td>27</td>
+											<td>28</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<input type="text" name="persons" placeholder="Человек в номере">
+							<div class="persons-quantity">
+								<div class="flex-container">
+									<h3 class="uppercase">человек в номере</h3>
+									<button type="button"><span class="visually-hidden">закрыть</span></button>
+								</div>
+								<ul>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+								</ul>
+								<select name="options">
+									<option value="children">Добавить ребенка</option>
+									<option value="child">Младенец</option>
+									<option value="one-year">Ребенок 1 год</option>
+									<option value="two-years">Ребенок 2 года</option>
+									<option value="three-years">Ребенок 3 года</option>
+									<option value="four-years">Ребенок 4 года</option>
+								</select>
+							</div>
+							<input type="text" name="price" placeholder="Цена не более">
+							<select name="currency">
+								<option value="rubles">₽</option>
+								<option value="euro">€</option>
+								<option value="dollar">$</option>
+								<option value="grivna">₴</option>
+								<option value="b">Б</option>
+							</select>
+						</div>
+						<p class="radiobuttons">
+							<label class="uppercase">
+								<input type="radio" name="hotel-type" value="tour" class="uppercase" checked>
+								<span class="checkbox-indicator"></span>
+								Турпакет
+							</label>
+							<label class="uppercase">
+								<input type="radio" name="hotel-type" value="single-hotel" class="uppercase">
+								<span class="checkbox-indicator"></span>
+								Конкретный отель
+							</label>
+						</p>
+						<p class="second-line">
+							<input type="text" name="city-from" placeholder="Город вылета">
+							<input type="text" name="city-to" placeholder="Направление">
+							<input type="text" name="hotel-features" placeholder="Характеристики отеля">
+							<button type="button">+</button>
+						</p>
+						<textarea name="suggestions" rows="5" cols="50" placeholder="Дополнительные пожелания"></textarea>
+						<p class="three-inputs">
+							<input type="text" name="name" placeholder="Ваше имя">
+							<input type="tel" name="phone" placeholder="Телефон">
+							<input type="text" name="email" placeholder="Email (необязательно)">
+						</p>
+						<button type="submit" class="sending">Отправить запрос*</button>
+					</form>
+				</div>
+			</section>
+			<section class="rules">
+				<div class="container">
+					<p>*Нажимая кнопку "отправить", я принимаю <a href="#">Соглашение об обработке личных данных</a> и <a href="#">Правила сайта</a></p>
+				</div>
+			</section>
+		</main>
+		<script src="js/form.js"></script>
+	</body>
+</html>

@@ -47,29 +47,64 @@
 					</form>
 				</div>
 			</section>
-			<section class="searching-form">
+			<section class="searching-form p-form">
 				<div class="container">
 					<ul>
 						<li><a href="tour-parameters.html">Параметры тура</a></li>
-						<li><a href="p.html">П1</a></li>
+						<li class="current"><a>П1</a></li>
 						<li><a href="sh.html">Ш2</a></li>
-						<li class="current"><a>Простая форма</a></li>
+						<li><a href="index.html">Простая форма</a></li>
 						<li><a href="rega.html">Рега</a></li>
 					</ul>
 					<p class="uppercase">Подберем идеальные параметры для вашего незабываемого отдыха</p>
 					<form action="tophotels.ru" method="post">
-						<textarea name="parameters" rows="5" cols="50" placeholder=
-"- укажите страну, курорт или отель 
-- количество человек 
-- ваши предпочтения по отелю 
-- ваш бюджет 
-- другие  пожелания"></textarea>
+						<p class="first-line">
+							<label for="dates">Период дат вылетов</label>
+							<input type="text" id="dates" name="dates" value="чт 14.09.18 + 12 дней">
+							<label for="days">Пребывание</label>
+							<input type="text" id="days" name="days" value="7 - 14 нч">
+							<label for="persons">Человек в номере</label>
+							<input type="text" id="persons" name="persons" value="2 взрослых">
+							<label for="price">Цена не более</label>
+							<input type="text" id="price" name="price" value="1 000 000">
+							<select name="currency">
+								<option value="rubles">₽</option>
+								<option value="euro">€</option>
+								<option value="dollar">$</option>
+								<option value="grivna">₴</option>
+								<option value="b">Б</option>
+							</select>
+						</p>
+						<p class="radiobuttons">
+							<label class="uppercase">
+								<input type="radio" name="hotel-type" value="tour" class="uppercase">
+								<span class="checkbox-indicator"></span>
+								Турпакет
+							</label>
+							<label class="uppercase">
+								<input type="radio" name="hotel-type" value="single-hotel" class="uppercase" checked="">
+								<span class="checkbox-indicator"></span>
+								Конкретный отель
+							</label>
+						</p>
+						<p class="second-line">
+							<label for="city-from">Город вылета</label>
+							<input type="text"id="city-from" name="city-from" value="Санкт-Петербург">
+							<label for="meals">Питание</label>
+							<input type="text" id="meals" name="meals" value="AI FB HB BB RO">
+						</p>
+						<p class="second-line">
+							<label for="adding-hotel">Добавить отель</label>
+							<input type="text" id="adding-hotel" name="adding-hotel" value="Mriya ResortResortResortResort & Spa (Mp... 5* Россия, Ялта Ялта ЯлтаЯлтаЯлта">
+							<button type="button">+</button>
+						</p>
+						<textarea name="suggestions" rows="5" cols="50" placeholder="Дополнительные пожелания"></textarea>
 						<p class="three-inputs">
 							<input type="text" name="name" placeholder="Ваше имя">
 							<input type="tel" name="phone" placeholder="Телефон">
 							<input type="text" name="email" placeholder="Email (необязательно)">
 						</p>
-						<button type="submit" class="sending">Отправить заявку*</button>
+						<button type="submit" class="sending">Отправить запрос*</button>
 					</form>
 				</div>
 			</section>
@@ -80,3 +115,4 @@
 			</section>
 		</main>
 	</body>
+</html>
