@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: 'apercu_pro', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	color: #45A5C9;
@@ -90,6 +90,10 @@ nav a {
 	font-weight: 700;
 }
 
+.site-navigation a:focus {
+	color: #475669;
+}
+
 .search {
 	min-height: 70px;
 	padding: 8px 0 8px 0;
@@ -118,7 +122,7 @@ nav a {
 	width: 80px;
 	min-height: 50px;
 	border: 0;
-	background-color: #fff8dc;
+	background-color: #faf6e5;
 }
 
 .key {
@@ -130,19 +134,21 @@ nav a {
 }
 
 .language {
+	position: absolute;
 	top: 10px;
 	right: -200px;
 	text-transform: uppercase;
 	width: 70px;
 	min-height: 50px;
 	border: 0;
-	background-color: #fff8dc;
+	background-color: #faf6e5;
 	color: #FB892D;
 	font-size: 13px;
 	font-weight: 700;
+	padding-left: 15px;
 }
 
-.language::after {
+/*.language::after {
 	content: "";
 	position: absolute;
 	top: 18px;
@@ -151,7 +157,7 @@ nav a {
 	height: 6px;
 	border-right: 2.5px solid #FB892D;
 	border-bottom: 2.5px solid #FB892D;
-	transform: rotate(45deg);
+	transform: rotate(45deg);*/
 }
 
 .container .current {
@@ -161,7 +167,7 @@ nav a {
 }
 
 .searching-form {
-	background-color: #fff8dc;
+	background-color: #faf6e5;
 	padding-top: 10px;
 }
 
@@ -172,6 +178,10 @@ nav a {
 .searching-form a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.searching-form a:focus {
+	color: #475669;
 }
 
 .searching-form ul {
@@ -204,7 +214,7 @@ nav a {
 }
 
 .searching-form textarea[name="parameters"]::placeholder {
-	color: #B3B3B2;
+	color: #999;
 	line-height: 20px;
 	font-weight: 700;
 }
@@ -233,8 +243,8 @@ nav a {
 	outline: 0;
 }
 
-.three-inputs::placeholder {
-	color: #B3B3B2;
+.three-inputs input::placeholder {
+	color: #999;
 	font-weight: 700;
 }
 
@@ -254,6 +264,72 @@ nav a {
 	margin-bottom: 20px;
 }
 
+.sending .first-svg {
+	transform-origin: 25% 50%;
+	transform: scale(0);
+}
+
+.sending .second-svg {
+	transform-origin: 50% 50%;
+	transform: scale(0);
+}
+
+.sending .third-svg {
+	transform-origin: 75% 50%;
+	transform: scale(0);
+}
+
+@keyframes first-appear {
+	25% {
+		transform: scale(1);
+	}
+	75%, 100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes second-appear {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes third-appear {
+	0%, 25% {
+		transform: scale(0);
+	}
+	75% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+.sending .first-svg {
+	animation-name: first-appear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.sending .second-svg {
+	animation-name: second-appear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.sending .third-svg {
+	animation-name: third-appear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
 .rules p {
 	font-size: 12px;
 	color: #000000;
@@ -261,6 +337,30 @@ nav a {
 }
 
 .rules a {
+	text-decoration: none;
+	color: #45A5C9;
+}
+
+footer {
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	display: flex;
+	padding: 20px 50px;
+}
+
+footer h2 {
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.footer-left {
+	width: 600px;
+	margin-right: 20px;
+}
+
+footer a {
 	text-decoration: none;
 	color: #45A5C9;
 }
