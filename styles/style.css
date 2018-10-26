@@ -125,6 +125,10 @@ nav a {
 	background-color: #faf6e5;
 }
 
+.parameters i::before {
+	content: "\f1de";
+}
+
 .key {
 	left: -200px;
 	width: 90px;
@@ -157,8 +161,8 @@ nav a {
 	height: 6px;
 	border-right: 2.5px solid #FB892D;
 	border-bottom: 2.5px solid #FB892D;
-	transform: rotate(45deg);*/
-}
+	transform: rotate(45deg);
+}*/
 
 .container .current {
 	color: #636363;
