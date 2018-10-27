@@ -4,8 +4,10 @@ body {
 	font-family: 'apercu_pro', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	color: #45A5C9;
+	color: #318cc6;
 	background-color: #ffffff;
+	max-width: 1260px;
+	margin: 0 auto;
 }
 
 .visually-hidden {
@@ -86,7 +88,7 @@ nav a {
 }
 
 .site-navigation a {
-	color: #45A5C9;
+	color: #318cc6;
 	font-weight: 700;
 }
 
@@ -127,6 +129,9 @@ nav a {
 
 .parameters i::before {
 	content: "\f1de";
+	color: rgb(255, 142, 65);
+	font-size: 20px;
+	font-size: inherit;
 }
 
 .key {
@@ -165,9 +170,9 @@ nav a {
 }*/
 
 .container .current {
-	color: #636363;
+	color: #475669 !important;
 	padding-bottom: 11px;
-	border-bottom: 2px solid #636363;
+	border-bottom: 2px solid #475669;
 }
 
 .searching-form {
